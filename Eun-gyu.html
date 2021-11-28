@@ -5,51 +5,148 @@
 <head>
   <title>League of Legend First Class Player</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="12.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
+<style>
+  * {
+  margin: 0px; padding: 0px;
+  }
 
+  .containor {
+    display: grid;
+    grid-template-rows: 25% 1fr;
+    background-image: url(./image/ahriwallpage.JPG);
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+  }
 
+  .containor h1{
+    font-family: 'Orbitron', sans-serif;
+    color: #e51284;
+    font-size: 62px;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+  }
 
+  .containor .box {
+    height: 115%;
+  }
+
+  .containor .box .playerlist {
+    display: grid;
+    grid-template-rows: 10% 1fr;
+    width: 90%;
+    margin : 0 auto;
+  }
+
+  .containor .box .playerlist .list {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    list-style-type:  none;
+  }
+
+  .containor .box .playerlist .list a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .containor .box .playerlist .list a:hover {
+    color: white;
+  }
+
+  .containor .box .playerlist .list button {
+    border-radius: 30px;
+    border: 3px solid #be1919;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 20px;
+    padding: 4px;
+    transition: all 0.4s;
+  }
+
+  .containor .box .playerlist .list button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.4s;
+  }
+
+  .containor .box .playerlist .cow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+  }
+
+  @keyframes spin {
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+  .containor .box .playerlist .cow .picture {
+    height: 100%;
+    margin: 10px 20px 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid red;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+  }
+
+  .containor .box .playerlist .cow .explain {
+    margin-left: 8vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid transparent;
+    border-radius: 10vh;
+    padding: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  .containor .box .playerlist .cow .explain .detail {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body class="containor">
   <h1>League of Legend First Class Player</h1>
+  <div class="box">
+    <div class="playerlist">
+      <ol class="list">
+        <li><button><a href="Main.html" title="메인페이지로 돌아가">Main</a></button></li>
+        <li><button><a href="Eun-gyu.html" title="한우선수페이지로 입장" style="color:red"><strong>Eun-gyu</strong></a></button></li>
+        <li><button><a href="Seong-o.html" title="오타멘디 페니스">Seong-o </a></button></li>
+        <li><button><a href="Young-geun.html" title="pussy">Young-geun</a></button></li>
+        <li><button><a href="eui-nyeon.html" title="상ㄸ">eui-nyeon</a></button></li>
+        <li><button><a href="Je-hyeong.html" title="2023년 12월 31일">Je-hyeong</a></button></li>
+        <li><button><a href="Dae-ho.html" title="kia.com">Dae-ho</a></button></li>
+      </ol>
+      <div class="cow">
+        <img  class="picture" src="cow.JPG">
+        <div class="explain">
+            <br>이름: Eun-gyu
+            <br>롤 닉네임: 밀양Ahri랑
+            <br>나이: 44
+            <br>다른 이름: 한우, 한우꽃미남, 종아리, 하마, 윤예진남친
+            <br>
+            <br>선호라인: MID
+            <br>부라인: AD, JG
 
-<body>
-  <div id="layout-grid">
-  <div class="player-list">
-  <h2>Player List</h2>
-  <ol>
-    <li><a href="Main.html" title="메인페이지로 돌아가">Main</a></li>
-    <li><a href="Eun-gyu.html" title="한우선수페이지로 입장" style="color:red"><strong>Eun-gyu</strong></a></li>
-    <li><a href="Seong-o.html" title="오타멘디 페니스">Seong-o </a></li>
-    <li><a href="Young-geun.html" title="pussy">Young-geun</a></li>
-    <li><a href="eui-nyeon.html" title="상ㄸ">eui-nyeon</a></li>
-    <li><a href="Je-hyeong.html" title="2023년 12월 31일">Je-hyeong</a></li>
-    <li><a href="Dae-ho.html" title="kia.com">Dae-ho</a></li>
-  </ol>
-  </div>
-</body>
-
-<body>
-  <div id="body-layout">
-    <div id="body1">
-      <img src="cow.JPG" width="450">
-      <br>이름: Eun-gyu
-      <br>롤 닉네임: 밀양Ahri랑
-      <br>나이: 44
-      <br>다른 이름: 한우, 한우꽃미남, 종아리, 하마, 윤예진남친
-      <br>
-      <br>선호라인: MID
-      <br>부라인: AD, JG
-    </div>
-      <div id="body2">
-      <p2>본문내용은 여기다 입력할거야 시발새끼들아 뭘봐
-      </p2>
+            <p class="detail">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
 </body>
-
-<body>
 
 
 
