@@ -1,24 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>javascript practise</title>
+    <title>Otamendi-pennis</title>
   </head>
-  <body>
 
-    <input type="button" value="night" onclick="
-    var A= document.querySelector('body');
-    if (this.value==='night') {
-      A.style.backgroundColor = 'black';
-      A.style.color = 'white';
-      this.value = 'day';
-    } else {
-      A.style.backgroundColor = 'white';
-      A.style.color = 'black';
-      this.value = 'night';}
-    ">
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    .containor {
+      display: grid;
+      grid-template-rows: 1fr 55%;
+      background-image: url(./image/rivenwallpaper.JPG);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-    <a href="Main.html"><butto>메뉴</butto></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .containor h1 {
+      text-align: center;
+      font-size: 62px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px 0px 0px 0px ;
+    }
+
+    .containor .playerlist {
+      display: grid;
+      grid-auto-rows: 1fr 50%;
+    }
+
+    .containor .playerlist .body {
+      display: flex;
+    }
+
+    .containor .playerlist .list {
+      display: flex;
+      list-style-type: none;
+      margin: 0 auto;
+      width: 80%;
+      justify-content: space-between;
+    }
+
+    .containor .playerlist button {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 3px solid black;
+      border-radius: 10vh;
+    }
+
+    .containor .playerlist .list a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  <body class="containor">
+    <h1>League of Legend First Class Player</h1>
+      <div class="playerlist">
+        <ol class="list">
+          <li><button><a href="Main.html" title="메인페이지로 돌아가">Main</a></button></li>
+          <li><button><a href="Eun-gyu.html" title="한우">Eun-gyu</a></button></li>
+          <li><button><a href="Seong-o.html" title="오타멘디 페니스" style="color:red"><strong>Seong-o</strong></a></button></li>
+          <li><button><a href="Young-geun.html" title="pussy">Young-geun</a></button></li>
+          <li><button><a href="eui-nyeon.html" title="상ㄸ">eui-nyeon</a></button></li>
+          <li><button><a href="Je-hyeong.html" title="2023년 12월 31일">Je-hyeong</a></button></li>
+          <li><button><a href="Dae-ho.html" title="kia.com">Dae-ho</a></button></li>
+        </ol>
+
+
+        <div class="body">
+          <img src="otamendi.JFIF">
+          <div class="body-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
   </body>
 </html>
