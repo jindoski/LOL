@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Otamendi-pennis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
 
   <style>
@@ -12,27 +14,27 @@
     }
     .containor {
       display: grid;
-      grid-template-rows: 1fr 55%;
+      grid-template-rows: 1fr 70%;
       background-image: url(./image/rivenwallpaper.JPG);
       background-repeat: no-repeat;
       background-size: cover;
+      margin-top: 10vh;
     }
 
     .containor h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #3983EB;
       text-align: center;
-      font-size: 62px;
+      align-items: center;
+      font-size: 72px;
       width: 80%;
+      height: 15vh;
       margin: 0 auto;
-      padding: 20px 0px 0px 0px ;
     }
 
     .containor .playerlist {
       display: grid;
-      grid-auto-rows: 1fr 50%;
-    }
-
-    .containor .playerlist .body {
-      display: flex;
+      grid-auto-rows: 1fr 70%;
     }
 
     .containor .playerlist .list {
@@ -40,19 +42,62 @@
       list-style-type: none;
       margin: 0 auto;
       width: 80%;
+      height: 100px;
       justify-content: space-between;
+      align-items:center;
     }
 
+    .containor .playerlist .body {
+      display: flex;
+      grid-template-columns: 1fr 20vh;
+      margin: 0px 50px 0px 50px;
+      height: 50vh;
+    }
+
+    .containor .playerlist .body img {
+      height: 300px;
+      width: 300px;
+      border: 3px solid transparent;
+      border-radius: 50%;
+      margin: 0px 25px 0px 50px;
+    }
+
+    .containor .playerlist .body .body-body {
+      padding: 50px;
+      height: 25vh;
+      border: 3px solid transparent;
+      border-radius: 15vh;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-family: 'Chakra Petch', sans-serif;
+    }
+
+
     .containor .playerlist button {
-      background-color: rgba(0, 0, 0, 0.1);
-      border: 3px solid black;
+      background-color: rgba(255, 255, 255, 0.4);
+      border: 3px solid #001E3D;
       border-radius: 10vh;
+      font-size: 20px;
+      padding: 5px;
+      transition: 0.4s;
+    }
+
+    .containor .playerlist button:hover {
+      cursor: pointer;
+      background-color: black;
     }
 
     .containor .playerlist .list a {
       text-decoration: none;
-      color: black;
+      color: #751975;
+      font-family: 'Chakra Petch', sans-serif;
+      transition: 0.4s;
     }
+
+    .containor .playerlist .list a:hover {
+      color: white;
+      cursor: pointer;
+    }
+    
   </style>
   <body class="containor">
     <h1>League of Legend First Class Player</h1>
