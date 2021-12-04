@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>PUSSY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap" rel="stylesheet">
   </head>
   <style>
 
@@ -15,16 +17,64 @@
     background-image: url(./image/elicewallpaper.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    grid-template-rows: 1fr 76.5vh;
+    /* border: 3px solid white; */
   }
 
   .containor h1{
+    font-family: 'Orbitron', sans-serif;
     font-size: 62px;
     text-align: center;
-
+    color: #730073;
+    padding: 30px;
+    margin-bottom: 15px;
   }
 
   .containor .bigbox {
     display: flex;
+    grid-template-columns: 1fr 60vh;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+
+  .containor .bigbox ol {
+    border: 3px solid white;
+    border-radius: 10vh;
+    background-color: rgba(153,50,153,0.4);
+    list-style-type:  none;
+    padding: 0px 50px; margin-left: 20px;
+    width: 500px;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  .containor .bigbox ol li {
+    padding: 18px 0px;
+  }
+
+  .containor .bigbox ol button {
+    font-family: 'Chakra Petch', sans-serif;
+    border: 3px solid white;
+    border-radius: 10vh;
+    margin-top : 7px;
+    background-color: #8c198c;
+    transition: 0.4s;
+  }
+
+  .containor .bigbox ol button:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .containor .bigbox ol a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 3px 3px;
+  }
+
+  .containor .bigbox ol a:hover {
+    color: #8c198c;
+    cursor: pointer;
   }
 
   .containor .bigbox .smallbox {
@@ -33,10 +83,21 @@
   }
 
   .containor .bigbox .smallbox .blueberry {
+    /* display: inline-block; */
     height: 40vh;
-    border: 3px solid transparent;
+    margin: 0 auto;
+    border: 3px solid purple;
     border-radius: 50%;
+    opacity: 0.8;
+  }
 
+  .containor .bigbox .smallbox .body {
+    margin: 20px 140px 30px 140px;
+    border: 3px solid white;
+    border-radius: 10vh;
+    padding: 20px 40px;
+    background-color: rgba(153,50,153,0.4);
+    color: white;
   }
 
 
